@@ -1,0 +1,26 @@
+{
+    "id": "26206052",
+    "path": "~/Documents/VS_M/R/proj42_istiaka/modules/welcome.R",
+    "project_path": "modules/welcome.R",
+    "type": "r_source",
+    "hash": "636107141",
+    "contents": "",
+    "dirty": false,
+    "created": 1646328219741.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "4,4",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1646328362,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1646328362155,
+    "read_only": false,
+    "read_only_alternatives": []
+}

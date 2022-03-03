@@ -1,0 +1,24 @@
+library(shiny)
+library(shinythemes)
+library(plotly)
+library(dplyr)
+library(shinyalert)
+
+
+ui <- fluidPage(theme = shinytheme("simplex"),
+                tags$head(
+                  tags$link(rel = "stylesheet", type = "text/css", href = "main.css")
+                ),
+                uiOutput('mainBody')
+  
+)
+
+server <- function(input, output, session) {
+  
+  output$mainBody<-renderUI({
+    
+  })
+  
+}
+
+shinyApp(ui, server)
