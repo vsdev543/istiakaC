@@ -5,6 +5,27 @@ body{
   margin: 0;
 }
 
+.container-fluid{
+   background-color: #364156;
+  color:#fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.form-group{
+  margin: 0 !important;
+}
+
+.ozz{
+  width:90vw; background-color:#fff;padding:10px; border-radius:10px;margin-top:10px; color:#333;
+}
+
+.ozz1{
+width:85vw;
+ background-color: red;
+}
 
 .grid-3{
   display: grid;
@@ -41,7 +62,7 @@ body{
   border-radius: 10px;
   /**transition: all 1s ease-in-out;**/
   animation-name: moveItxAnime;
-  animation-duration: 2s;
+  animation-duration: .5s;
   animation-timing-function: linear;
 }
 
@@ -61,8 +82,8 @@ body{
 }
 
 @keyframes moveItxAnime {
-  0%   { opacity:0;}
-  100% {opacity:1;}
+  0%   { opacity:0; transform: translate(-10em,0em) scale(0.5);}
+  100% {opacity:1; transform: translate(0em,0em) scale(1);}
 }
 
 @keyframes brand {
