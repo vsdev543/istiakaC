@@ -3,6 +3,7 @@ library(plotly)
 library(dplyr)
 library(shinyalert)
 library(DT)
+library(shinyjs)
 
 library(bs4Dash)
 library(shinyWidgets)

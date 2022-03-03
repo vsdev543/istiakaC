@@ -54,11 +54,6 @@ dash <- function(input, output, session) {
   
   ns<-session$ns
   
-  sheets<-getSheetNames("data/oPestTL_V104.xlsx")
-  
-  output$main<-renderUI({
-    
-  })
   
   df<-reactive({
     df<-read.xlsx("data/oPestTL_V104.xlsx",sheet = input$equip)
