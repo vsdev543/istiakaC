@@ -35,7 +35,10 @@ server <- function(input, output, session) {
   
   output$bodyMain<-renderUI({
     if(r$k==0){
-      welcome_UI(id='wel',appName,appDesc)}else{
+      welcome_UI(id='wel',appName,appDesc)
+      }else if(r$k==1){
+        dash_UI('dash',title=appName)
+      }else if(r$k==2){
         dash_UI('dash',title=appName)
       }
   })
@@ -44,8 +47,12 @@ server <- function(input, output, session) {
   
   callModule(dash,id="dash")
   
-  observeEvent(input[[NS(namespace = 'wel','goIn')]],{
-    r$k<-r$k+1
+  observeEvent(input[[NS(namespace = 'wel','app1')]],{
+    r$k<-1
+  })
+  
+  observeEvent(input[[NS(namespace = 'wel','app2')]],{
+    r$k<-2
   })
   
   observe(print(r$k))

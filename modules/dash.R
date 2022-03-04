@@ -100,8 +100,8 @@ dash <- function(input, output, session) {
                       tabPanel(title = sheet,
                                tagList(br(),
                                lapply(plotNames,function(param){
-                                 div(
-                                   fluidRow(column(6,h3(paste(sheet,"|",param))),column(6,
+                                 div(style='padding:30px;',
+                                   fluidRow(column(9,h3(paste(sheet,"|",param))),column(3,
                                    sliderInput(inputId = ns(paste0(sheet,"-",param,"slide")),
                                                min = floor(min(as.numeric(df[,param]),na.rm = T)),
                                                max =  ceiling(max(as.numeric(df[,param]),na.rm = T)),
@@ -137,7 +137,7 @@ dash <- function(input, output, session) {
           plot_ly(x=df[,names(df)[grepl(pattern = "time",names(df),ignore.case = T) & grepl(pattern = "sec",names(df),ignore.case = T)]],
                   y=df[,param],
                   type = 'scatter',
-                  mode='lines+markers'
+                  mode='lines'
                   )%>%
             layout(
               yaxis=list(title=param),
